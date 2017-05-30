@@ -35,7 +35,7 @@ if (!mysqli_query($conn,  $table_users)) {
 // -----------------------------------------------------------------------------
 // 4. Insert data
 
-$insert_users = "INSERT INTO users VALUES('', 'admin', 'admin', MD5('admin')),('', 'Scarlett', 'Johansson', MD5('qwerty')),('', 'Mila', 'Kunis', MD5('football')),('', 'David', 'Hasselhoff', MD5('1qaz2wsx'));";
+$insert_users = "INSERT INTO users VALUES('', 'admin', 'admin', MD5('admin')),('', 'Scarlett', 'Johansson', MD5('qwerty'));";
 if (!mysqli_query($conn,  $insert_users)) {
 	$_SESSION['err_setup'] = '<p class="alert alert-danger">Could not insert into users table in '.$fh['db_name'] . ' DB</p>';
 	redirectTo('install.php');
