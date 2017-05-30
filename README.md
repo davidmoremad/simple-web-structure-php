@@ -29,7 +29,7 @@ with the aim of having a website in the shortest possible time.
 ## Installation
 1. Download repository in your web directory:
     ```
-    git clone git@github.com:davidmoremad/simple-web-structure-php.git
+    git clone https://github.com/davidmoremad/simple-web-structure-php.git
     ```
 2. Go to http://localhost/ (You will be redirected to install.php file to install DB)
 
