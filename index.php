@@ -1,33 +1,17 @@
 <?php
 define('ROOT_DIR', '');
 require_once(ROOT_DIR.'includes/loader.php');
-require_once(ROOT_DIR.'includes/header.php');
+require_once(ROOT_DIR.'includes/partials/header.php');
 ?>
 
-<div class="row">
-<?php foreach ($vulns as $name => $types) { ?>
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <div class="caption">
-        <h3><?php print $name ?></h3>
-        <div class="dropdown">
-          <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Types
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu btn-block">
-              <?php
-              foreach ($types as $type) {
-                print '<li><a href="/vulns/'.strtolower($name).'_'.strtolower($type).'.php">'.$type.'</a></li>';
-              }
-             ?>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-<?php } ?>
-</div>
+<h1>Your title here</h1>
+<img src="<?php echo ROOT_DIR.'assets/img/banner.jpg' ?>" alt="Banner-corp" class="img-50 pull-right">
+<p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+<hr class="ornament">
 
-<?php require_once(ROOT_DIR.'includes/footer.php'); ?>
+<h1>Another aligned title</h1>
+<p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<hr class="ornament">
+
+<?php require_once(ROOT_DIR.'includes/partials/footer.php'); ?>

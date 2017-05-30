@@ -1,7 +1,7 @@
 <?php
 define('ROOT_DIR', '');
 require_once(ROOT_DIR.'includes/loader.php');
-require_once(ROOT_DIR.'includes/header.php');
+require_once(ROOT_DIR.'includes/partials/header.php');
 ?>
 
 <?php
@@ -37,7 +37,7 @@ else {
           </div>
           <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" name="password" placeholder="1234?" autocomplete="off">
+            <input type="password" class="form-control" name="password" placeholder="&bull;&bull;&bull;&bull;" autocomplete="off">
           </div>
           <input type="hidden" name="tokenfield" value="<?php echo $_SESSION['sessiontoken']; ?>">
           <button type="submit" role="button" name="login" class="btn btn-primary btn-block">Enter</button>
@@ -49,4 +49,4 @@ else {
 ?>
 
 
-<?php require_once(ROOT_DIR.'includes/footer.php'); ?>
+<?php require_once(ROOT_DIR.'includes/partials/footer.php'); ?>

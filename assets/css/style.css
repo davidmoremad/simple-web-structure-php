@@ -6,83 +6,81 @@ body {
   margin-top: 70px;
   font-family: 'Open Sans', sans-serif;
 }
-hr{
-  border-bottom:1px solid rgba(139, 139, 139, 0.2)
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', sans-serif;
 }
 
-/* -------------------------------------------------------------------
-                            BOOTSTRAP
- ------------------------------------------------------------------- */
+hr{
+border-top: 1px dashed #bbb;
+}
+
+img {
+  width: inherit;
+  padding: 0px 10px;
+}
 
 a {
   text-decoration: none !important;
 }
+/* -------------------------------------------------------------------
+                            BOOTSTRAP
+ ------------------------------------------------------------------- */
+
 .btn-group .btn,
 .alert {
    background-image: none;
  }
- .btn-input {
-    display: block;
- }
+.btn-input {
+  display: block;
+}
 
- .btn-input .btn.form-control {
-     text-align: left;
- }
+.btn-input .btn.form-control {
+   text-align: left;
+}
 
- .btn-input .btn.form-control span:first-child {
-    left: 10px;
-    overflow: hidden;
-    position: absolute;
-    right: 25px;
- }
+.btn-input .btn.form-control span:first-child {
+  left: 10px;
+  overflow: hidden;
+  position: absolute;
+  right: 25px;
+}
 
- .btn-input .btn.form-control .caret {
-    margin-top: -1px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
- }
+.btn-input .btn.form-control .caret {
+  margin-top: -1px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
 
- /* -------------------------------------------------------------------
-                             LOCAL
-  ------------------------------------------------------------------- */
+/* -------------------------------------------------------------------
+                           LOCAL
+------------------------------------------------------------------- */
 
-.img-xs {
-  height:16px;
-  padding-right: 3px;
+.right {
+  text-align: right;
 }
-.logotype {
-  padding: 5px 0 0 0;
-  max-width: 140px;
-  max-height: 140px;
+
+hr.ornament:after {
+  content: '\002702';
+  display: inline-block;
+  position: relative;
+  top: -14px;
+  left: 0px;
+  padding: 0;
+  background-color: inherit;
+  color: #bbb;
+  font-size: 18px;
 }
-.caption a{
-  text-align: justify;
+
+.img-25 {
+  width: 25%;
 }
-.caption h3{
-  font-family: 'Fira Sans', sans-serif;
-  text-align: center;
-  vertical-align: middle;
-  color: rgb(66, 66, 66);
-  font-size: 30px;
-  padding: 0 10px 5px 10px;
+
+.img-33 {
+  width: 33%;
 }
-.caption table tr td:first-child {
-  border-right: 1px solid rgba(0, 0, 0, 0.6);
-}
-.caption table tr td:nth-child(2) {
-  width: 5%;
-}
-.loader {
-    border: 5px solid #f3f3f3; /* Light grey */
-    border-top: 5px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    animation: spin 1s linear infinite;
-    display: inline-block;
-}
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+
+.img-50 {
+  width: 50%;
 }

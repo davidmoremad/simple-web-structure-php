@@ -47,12 +47,17 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li <?php activeTab("")?>><a href="<?php echo ROOT_DIR.'.' ?>">Playtesting<span class="sr-only">(current)</span></a></li>
-          <li <?php activeTab("analyze")?>><a href="<?php echo ROOT_DIR.'analyze' ?>">Analyzing</a></li>
-          <li <?php activeTab("discover")?>><a href="<?php echo ROOT_DIR.'discover' ?>">Discovering</a></li>
+          <li <?php activeTab("")?>><a href="<?php echo ROOT_DIR.'.' ?>">Home<span class="sr-only">(current)</span></a></li>
+          <li <?php activeTab("others")?>><a href="<?php echo ROOT_DIR.'others' ?>">Others</a></li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="<?php echo ROOT_DIR.'logout';?>" >Logout</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
 <div class="container">
+
+  <div class="row">
+    <div class="col-xs-12">

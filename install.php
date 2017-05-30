@@ -1,7 +1,7 @@
 <?php
 define('ROOT_DIR', '');
 require_once(ROOT_DIR.'includes/functions.php');
-require_once(ROOT_DIR.'includes/header.php');
+require_once(ROOT_DIR.'includes/partials/header.php');
 session_start();
 ?>
 
@@ -122,4 +122,4 @@ $(document).ready(function(){
 
 
 
-<?php require_once('includes/footer.php'); ?>
+<?php require_once('includes/partials/footer.php'); ?>

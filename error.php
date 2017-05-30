@@ -2,7 +2,7 @@
 define('ROOT_DIR', '');
 session_start();
 require_once(ROOT_DIR.'includes/functions.php');
-require_once(ROOT_DIR.'includes/header.php');
+require_once(ROOT_DIR.'includes/partials/header.php');
 ?>
 
 
@@ -20,4 +20,4 @@ else {
 <p class="alert alert-danger"><?php echo $errorMessage ?></p>
 
 
-<?php require_once(ROOT_DIR.'includes/footer.php');?>
+<?php require_once(ROOT_DIR.'includes/partials/footer.php');?>
