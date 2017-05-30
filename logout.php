@@ -5,13 +5,13 @@ require_once(ROOT_DIR.'includes/partials/header.php');
 ?>
 
 <?php
-if (isLoggedIn()) {
-  session_destroy();
-  redirectTo(ROOT_DIR.'index.php');
-}
-else {
+  if (isLoggedIn()) {
+    logOut();
     redirectTo(ROOT_DIR.'index.php');
-}
+  }
+  else {
+      redirectTo(ROOT_DIR.'index.php');
+  }
 ?>
 
 

@@ -23,7 +23,7 @@ function logIn($username, $password) {
 	if ($username == $puggyConf['wi_user'] & $password == $puggyConf['wi_pass']) {
 		$authSession =& authLoader();
 		$authSession['puggy'] = $username;
-		redirectTo('index.php');
+		redirectTo(ROOT_DIR.'/');
 	}
 	else {
 		redirectTo('login.php');
