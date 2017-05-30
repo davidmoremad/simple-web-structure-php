@@ -67,19 +67,21 @@ function checkSessionToken($field_token, $session_token, $redirectUrl){
 
 # -------------- DATABASE --------------
 
-function initDb(){
-	$puggyConf = getConfig();
+function initDb($puggyConf){
   return mysqli_connect($puggyConf['db_addr'], $puggyConf['db_user'], $puggyConf['db_pass'], $puggyConf['db_name']);
 }
 
 function checkDatabaseInstallation(){
-	$conn = initDb();
-	if (!$conn) {
-		redirectError('Could not connect to database. Please, try to <a href="install.php">install</a>.');
+	$puggyConf = getConfig();
+	if ($puggyConf['db_reqd'] == true) {
+		$conn = initDb($puggyConf);
+		if (!$conn) {
+			redirectError('Could not connect to database. Please, try to <a href="install.php">install</a>.');
+		}
+		else {
+			mysqli_close($conn);
+		}
 	}
-  else {
-    mysqli_close($conn);
-  }
 }
 
 

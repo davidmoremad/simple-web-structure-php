@@ -7,7 +7,7 @@
 
 <html lang="en">
 <head>
-  <title>FITH - Vulnerable Web Application</title>
+  <title>YOUR WEBSITE</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
